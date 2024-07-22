@@ -1,6 +1,6 @@
 # Welcome
 
-Welcome to my documentation repository. This repository contains various guides and resources for writting end-to-end tests.
+Welcome to my documentation repository. This repository contains various guides and resources for writing end-to-end tests.
 
 ## Contents
 
