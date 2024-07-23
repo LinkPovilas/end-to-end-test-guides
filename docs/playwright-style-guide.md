@@ -15,6 +15,7 @@ This document describes the standards used for writing E2E (end-to-end) tests us
   - [Grouping Page Elements Into Lean Page Objects](#grouping-page-elements-into-lean-page-objects)
   - [Nested Page Objects](#nested-page-objects)
   - [Using Test Fixtures For Initializing Objects](#using-test-fixtures-for-initializing-objects)
+  - [Defining Test Scenarios](#defining-test-scenarios)
 
 # Project Structure
 
@@ -321,5 +322,25 @@ export const test = base.extend<PageObject>({
   navigationBar: async ({ page, careerDropdownMenu }, use) => {
     await use(new NavigationBar(page, careerDropdownMenu));
   },
+});
+```
+
+## Defining Test Scenarios
+
+When writing tests, describe the behavior of a specific feature or component of the application. The outermost describe block should provide the name of the feature or component being tested, and any nested describe blocks contribute to the test scenario’s name. Use clear and descriptive test titles that clearly state what is the expected outcome.
+
+For example:
+
+```javascript
+/**
+ * feature: Authentication
+ * scenario: when a user has admin privileges it should redirect to the admin page
+ * */
+describe("Authentication", () => {
+  describe("when a user has admin privileges", () => {
+    it("should redirect to the admin page", async () => {
+      // code
+    });
+  });
 });
 ```
