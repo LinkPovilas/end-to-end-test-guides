@@ -5,4 +5,4 @@ Welcome to my documentation repository. This repository contains various guides 
 ## Contents
 
 - [General Guide](docs/general-guide.md)
-- [Playwright style guide](docs/playwright-style-guide.md)
+- [Playwright Style Guide](docs/playwright-style-guide.md)
