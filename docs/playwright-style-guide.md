@@ -32,10 +32,11 @@ To make navigation easier keep the project structure flat. Consider using a tool
 
 # Naming Files & Folders
 
-Use [kebab-case](https://developer.mozilla.org/en-US/docs/Glossary/Kebab_case) for folder and file names. Use plural case for directories (folders) and singular case for file names. For example:
+Use [kebab-case](https://developer.mozilla.org/en-US/docs/Glossary/Kebab_case) for folder and file names. Use plural case for directories and prefer singular case for file names. For example:
 
 - Folder: `./page-objects/`
-- File: `./page-objects/page-object.ts`
+- Class file name: `./page-objects/page-object.ts`
+- Utility functions file name: `./utils/test-data-utils.ts`
 
 Follow this formula: `<descriptor>-test.ts` when naming fixtures. For instance:
 
