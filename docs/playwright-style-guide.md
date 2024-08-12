@@ -21,6 +21,7 @@ This document describes the standards used for writing E2E (end-to-end) tests us
 
 To make navigation easier keep the project structure flat. Consider using a tool like [this website](https://tree.nathanfriend.io/) to plan your project structure.
 
+For example:
 ```Shell
 .
 ├── api          # API related data like interfaces, etc.
